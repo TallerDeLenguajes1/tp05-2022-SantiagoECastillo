@@ -1,5 +1,5 @@
 ﻿using System;
-double numero;
+double numero, numero2;
 int opcion = 0;
 String? salir = "s";
 
@@ -44,6 +44,22 @@ while(salir == "s"){
             numero = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("La parte entera del numero es: " + Math.Truncate(numero));
             break;
+        case 7:
+            Console.WriteLine("---Mayor entre---");
+            Console.WriteLine("Ingrese un numero: ");
+            numero = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese otro numero: ");
+            numero2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("el mayor entre ellos es: " + Math.Max(numero, numero2));
+            break;
+        case 8:
+            Console.WriteLine("---Menor entre---");
+            Console.WriteLine("Ingrese un numero: ");
+            numero = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese otro numero: ");
+            numero2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("el menor entre ellos es: " + Math.Min(numero, numero2));
+            break;
         default:
             Console.WriteLine("Opcion no valida");
             break;
@@ -62,6 +78,8 @@ int menu(){
     Console.WriteLine("4- Seno");
     Console.WriteLine("5- Coseno");
     Console.WriteLine("6- Parte entera");
+    Console.WriteLine("7- Mayor entre");
+    Console.WriteLine("8- Menor entre");
     Console.WriteLine("Ingrese la opcion: ");
     opcion = Convert.ToInt32(Console.ReadLine());
 
