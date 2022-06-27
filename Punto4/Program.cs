@@ -1,5 +1,5 @@
 ﻿string? cadena, palabraBuscar, cadena2;
-/*
+
 Console.WriteLine("Ingrese una linea de texto: ");
 cadena = Console.ReadLine();
 
@@ -57,7 +57,7 @@ if(cadena.CompareTo(cadenaComparada) == 0){
 }else{
     Console.WriteLine("las cadenas no son iguales");
 }
-*/
+
 
 //a modo de simplificar, solo realizare la suma
 Console.WriteLine("\n ---Calculadora----");
